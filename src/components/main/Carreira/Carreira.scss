@@ -1,0 +1,160 @@
+@import '../../../Styles/variables.scss';
+
+
+.Carreira{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 70px;
+
+    overflow: hidden;
+
+    scroll-behavior: smooth;
+}
+.Carreira-Inner{
+    width: 90%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 65px;
+
+}
+
+.Carreira-inner-Container{
+    width: 90%;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 24px;
+
+    padding-top: 34px;
+}
+
+.Carreira-Inner .Title-Component{
+    padding-bottom: 24px;
+    align-items: flex-start;
+}
+
+
+
+.Carreira-SubTitulo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: flex-start;
+    gap: 8px;
+}
+.Carreira-SubTitulo h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+}
+.Carreira-SubTitulo h5{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #ffffff80;
+}
+
+
+
+.Profissional-Container, .Academica-Container{
+    width: 300px;
+    height: auto;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    overflow: visible;
+}
+
+
+
+
+
+
+@media (min-width: 480px) {
+
+.Carreira .Carreira-Slide-inner{
+    display: none;
+}
+
+.Carreira-inner-Container,
+.Carreira-inner-Container .Carreira-Slide-inner{
+    display: flex;
+}
+
+
+.Carreira{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 70px;
+
+    overflow: hidden;
+}
+
+
+
+.Carreira-SubTitulo{
+    display: none;
+}
+
+.Carreira-Slide{
+    width: 600%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    overflow: inherit;
+}
+
+
+}
+
+
+@media (min-width: 768px) {
+    .Carreira-Inner{
+        align-items: center;
+    }
+
+    .Carreira-inner-Container{
+        flex-direction: row;
+        align-items: flex-start;
+    
+        gap: 24px;
+    }
+
+    .Carreira-SubTitulo h1{
+        font-size: 32px;
+    }
+    .Carreira-SubTitulo h5{
+        font-size: 24px;
+    }
+
+    .Carreira-Inner .Title-Component{
+        padding-bottom: 24px;
+        align-items: center;
+    }
+}
