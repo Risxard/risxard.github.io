@@ -4,6 +4,18 @@ import "./PortfolioSlider.scss";
 function PortfolioSlider() {
   const portfolio = [
     {
+      id: "HypeCode",
+      link: "https://github.com/Risxard/hypecode",
+      repoLink: "https://github.com/Risxard/hypecode",
+      titulo: "HypeCode",
+      status: "Online",
+      descricao:
+        "Desenvolvi o site da HypeCode Software House, combinando design e codificação para proporcionar uma experiência digital memorável.",
+      imagem:
+        "https://github.com/Risxard/hypecode/assets/88140056/37ff613f-f3fa-4ece-a1ae-e558a4dd20b5",
+      techs: ["React"],
+    },
+    {
       id: "SisTEA",
       link: "https://github.com/Risxard/SisTEA",
       repoLink: "https://github.com/Risxard/SisTEA",
@@ -40,8 +52,8 @@ function PortfolioSlider() {
     },
     {
       id: "Gymme",
-      link: "https://github.com/Risxard/Gymme/",
-      repoLink: "https://github.com/Risxard/Gymme/",
+      link: "https://richardsonsouza.com/Gymme/",
+      repoLink: "https://richardsonsouza.com/Gymme/",
       titulo: "Gymme",
       descricao:
         "Landing page para uma academia, com um design contemporâneo, priorizando Mobile First e sendo totalmente responsiva",

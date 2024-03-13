@@ -9,8 +9,8 @@ import HeaderConteudo from "./components/header/HeaderConteudo/HeaderConteudo.js
 import AboutMe from "./components/main/AboutMe/AboutMe.jsx";
 import IntroMain from "./components/main/IntroMain/IntroMain.jsx";
 import Carreira from "./components/main/Carreira/Carreira.jsx";
-import Skills from "./components/main/Skills/Skills";
-import Portfolio from "./components/main/Portfolio/Portfolio";
+import Skills from "./components/main/Skills/Skills.jsx";
+import Portfolio from "./components/main/Portfolio/Portfolio.jsx";
 
 import CopyLogo from "./assets/Logos/CopySimple.svg";
 import SendLogo from "./assets/Logos/PaperPlaneTilt.svg";
@@ -110,7 +110,7 @@ function App() {
 
         <section id="Contato" className="footer-direitos-container">
           <div className="footer-direitos-inner">
-            <h5>Copyright © Henrique Sousa · 2022</h5>
+            <h5>Copyright © Richardson Souza · 2022</h5>
             <SocialMedia />
           </div>
         </section>

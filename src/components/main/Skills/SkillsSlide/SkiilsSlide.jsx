@@ -4,7 +4,7 @@ import "./SkiilsSlide.scss";
 
 import ReactLogo from "./TechLogos/React.svg";
 import JavascriptLogo from "./TechLogos/Javascript.svg";
-import CSS from "./TechLogos/css.svg";
+import CSS from "./TechLogos/Css.svg";
 import Html from "./TechLogos/HTML5.svg";
 import Git from "./TechLogos/Git.svg";
 import Github from "./TechLogos/Github.svg";

@@ -13,14 +13,15 @@ function CarreiraSlide1() {
       <ul className="Carreira-Slide">
         <li className="Carreira-Slide-Item">
           <div>
-            <h3>Em busca de desafios profissionais</h3>
+            <h3>Freelancer</h3>
             <p>
-              Tenho vontade de ingressar na área de T.I, mas ainda não tive a
-              oportunidade de atuar profissionalmente.
+              Como freelancer, estou desenvolvendo aplicações, desafiando-me
+              constantemente e expandindo minhas habilidades para alcançar novos
+              patamares na minha jornada profissional.
             </p>
           </div>
           <span>
-            <h5>2023</h5>
+            <h5>2024</h5>
             <h6>Atualmente</h6>
           </span>
         </li>
