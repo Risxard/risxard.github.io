@@ -1,0 +1,40 @@
+@import '../../../Styles//variables.scss';
+
+.Portfolio {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 80px;
+
+
+}
+
+.Portfolio-Inner {
+    width: 100%;
+    height: auto;
+    padding-inline: var(--padding-inline-inner);
+    display: flex;
+    flex-direction: column;
+}
+
+.Portfolio-Header-Container > .Portfolio-Filtros-Container {
+    display: none;
+}
+
+
+
+
+
+
+@media (min-width: 1024px) {
+.Portfolio-Header-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+}

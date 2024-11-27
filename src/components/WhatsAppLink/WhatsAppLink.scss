@@ -1,0 +1,54 @@
+@import "../../Styles/variables.scss";
+
+
+.WhatsAppLink-Container{
+    text-decoration: none;
+
+    width: auto;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    border: solid;
+    border-width: 1px;
+    border-color: $color-secundary;
+    border-radius: 8px;
+
+    padding: 8px 10px;
+
+    gap: 5px;
+
+    text-wrap: nowrap;
+
+    transition: all 0.3s ease-in-out;
+}
+.WhatsAppLink-Container h5{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: clamp(14px, 3vw, 16px);
+    color: $color-secundary;
+}
+
+.WhatsAppLink-Container img{
+    width: 24px;
+    height: 24px;
+}
+
+.WhatsAppLink-Container:hover{
+    background-color:  $background-color2;
+
+}
+
+
+@media (min-width: 768px){
+    .Footer-Contatos .WhatsAppLink-Container img{
+        width: 38px;
+        height: 38px;
+    }
+    .Footer-Contatos .WhatsAppLink-Container h5{
+        font-size: 20px;
+
+    }
+}

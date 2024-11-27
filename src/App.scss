@@ -1,0 +1,380 @@
+@import "./Styles/variables.scss";
+
+html {
+  width: 100%;
+  height: auto;
+  scroll-behavior: smooth;
+}
+
+
+#root {
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+
+  background-color: $background-color;
+  color: #ffff;
+
+
+  --padding-inline-inner: 5%;
+}
+
+.scroll-to-top{
+  cursor: pointer;
+}
+
+
+#btnTop{
+  display: none;
+  width: auto;
+  height: auto;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+#btnTop svg{
+  width: 45px;
+  height: 45px;
+}
+
+
+header {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.header-inner {
+  width: 100%;
+  padding: 20px 0px;
+
+  padding-inline: var(--padding-inline-inner);
+
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main{
+  width: 100%;
+  height: 100%;
+  padding-top: 75px;
+}
+
+
+
+
+.footer {
+  width: 100%;
+  height: auto;
+}
+
+.footer-direitos-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: $background-color2;
+}
+
+.footer-direitos-inner {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 90%;
+  height: 100%;
+
+  padding-inline: var(--padding-inline-inner);
+
+  position: relative;
+
+  gap: 10px;
+
+}
+
+.footer-direitos-inner>h5 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff80;
+
+  order: 1;
+}
+
+.Footer-Contatos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 100px 0px;
+
+}
+
+.Foot-Contatos-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 90%;
+  height: auto;
+
+  gap: 24px;
+}
+
+.Foot-Contatos-inner>.Title-Component {
+  align-items: flex-start;
+}
+
+.Foot-Contatos-inner a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  gap: 5px;
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+
+  color: $color-secundary;
+
+}
+
+.Foot-Contatos-inner a img {
+  width: 20px;
+  height: 20px;
+}
+
+
+
+.Footer-Email-Container {
+  width: auto;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 20px;
+
+}
+
+
+
+.Email-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.Email-Container img {
+  width: 26px;
+  height: 26px;
+
+  margin-bottom: 10px;
+
+  transition: all 0.3s ease-in-out;
+}
+.Email-Container img:hover {
+  opacity: 50%;
+}
+
+
+
+.Email-Container span h5 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff80;
+}
+
+.Email-Container h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #7B4AE2;
+}
+
+.Email-Container-Content {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  gap: 10px;
+}
+
+.Email-Container-Content img {
+
+  width: 26px;
+  height: 26px;
+}
+
+.SocialTop .SocialMedia-Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sendbtn{
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+
+#copybtn{
+  cursor: pointer;
+}
+
+.SocialTop {
+  width: 100%;
+  height: auto;
+}
+
+
+.copy-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  position: relative;
+}
+
+#copySuccess{
+  width: auto;
+  height: 30px;
+
+  display: none;
+  padding: 5px 12px;
+
+  position: absolute;
+
+  border-radius: 4px;
+
+  margin-bottom: 100px;
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #fff;
+
+  background-color: #0000007a;
+}
+
+
+
+@media (min-width: 768px) {
+  #btnTop svg{
+    width: 50px;
+    height: 50px;
+  }
+  .Foot-Contatos-inner {
+    align-items: center;
+
+    gap: 64px;
+  }
+
+  .Foot-Contatos-inner>.Title-Component {
+    align-items: center;
+  }
+
+
+  .SocialTop .SocialMedia-Container {
+    display: none;
+  }
+
+
+  .Email-Container {
+    align-items: center;
+  }
+
+  .Email-Container img {
+    width: 40px;
+    height: 40px;
+
+    margin-bottom: 10px;
+  }
+
+  #sendbtn{
+    width: 42px;
+    height: 42px;
+  }
+  .Email-Container span h5 {
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .Email-Container h4 {
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .Email-Container-Content img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .footer-direitos-inner h5 {
+    position: absolute;
+    left: 0;
+  }
+
+
+  .Footer-Email-Container {
+    width: auto;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 40px;
+
+  }
+
+  .Email-Container-Content {
+    flex-direction: column;
+    align-items: center;
+
+    gap: 25px;
+  }
+
+  #copySuccess{
+    width: auto;
+    height: 30px;
+  
+    display: none;
+    padding: 5px 12px;
+  
+    position: absolute;
+  
+    border-radius: 4px;
+  
+    margin: 0 0 15px 150px;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #fff;
+  
+    background-color: #0000007a;
+  }
+
+}
+
+

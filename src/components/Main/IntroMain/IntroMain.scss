@@ -1,0 +1,144 @@
+@import '../../../Styles/variables.scss';
+
+.IntroMain {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px var(--padding-inline-inner);
+}
+
+.IntroMain-Inner {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Intro-Container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.Intro-Container h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.Intro-Container h5 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.Lista {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.Lista li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Intro-Lista1 li {
+    border: solid 1px;
+    border-color: $color-secundary;
+    border-radius: 16px;
+    background-color: $background-color;
+    width: 246px;
+    height: 200px;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+
+
+
+
+.intro-lista1 li:last-child {
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.intro-lista1:hover li:last-child {
+    transform: translateX(0);
+}
+
+
+
+
+
+.Intro-Lista1 img {
+    margin-bottom: 8px;
+}
+
+.Intro-Lista1 li:hover {
+    border: #ffffff00;
+    background-color: $background-color2;
+}
+
+.Intro-Lista2 {
+    display: none;
+    width: auto;
+    height: 110px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $background-color2;
+    border-radius: 16px;
+}
+
+.Intro-Lista2 li {
+    width: 246px;
+    height: 200px;
+}
+
+.Intro-Lista2 h1 {
+    color: $color-primary;
+}
+
+.Intro-Lista2 h5 {
+    color: $color-primary;
+}
+
+
+
+
+@media (min-width: 850px) {
+    .Lista {
+        display: flex;
+        flex-direction: row;
+        gap: 50;
+    }
+
+    .IntroMain {
+
+
+        padding: 60px 0px;
+
+    }
+
+    .Intro-Lista1 {
+        flex-direction: row;
+    }
+
+    .Intro-Lista2 {
+        display: flex;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .Lista {
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+    }
+}

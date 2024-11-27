@@ -1,0 +1,101 @@
+@import '../../../../Styles/variables.scss';
+
+
+.Portfolio-Filtros-Container,
+.Portfolio-Filtros-Container button {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+}
+
+.Portfolio-Filtros-Container {
+    width: 100%;
+    height: auto;
+    margin-top: 32px;
+    gap: 8px;
+
+    overflow-x: auto;
+
+    padding-left: 5%;
+
+    list-style: none;
+}
+
+.Portfolio-Filtros-Container::-webkit-scrollbar {
+    display: none;
+}
+
+
+.Portfolio-Filtros-Container li {
+    min-width: 116px;
+    height: 40px;
+
+    justify-content: center;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+
+    background: none;
+
+    color: $color-secundary;
+
+    border: 1px solid;
+    border-radius: 8px;
+
+    gap: 8px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+
+    transition: all 0.4s ease-in-out 0s;
+
+}
+
+
+
+.Portfolio-Filtros-Container li:hover{
+
+opacity: 60%;
+}
+
+
+.Portfolio-Filtros-Container li img {
+    width: 27px;
+    height: 24px;
+
+}
+
+
+.Portfolio-Filtros-Container .selecionado {
+    background-color: $background-color2;
+    border: none;
+}
+
+
+
+
+@media (min-width: 1024px) {
+
+    .Portfolio-Header-Container > .Portfolio-Filtros-Container {
+        display: flex;
+    }
+    
+    .Portfolio-Filtros-Container {
+        width: auto;
+        display: none;
+        padding-left: 0%;
+        align-items: flex-end;
+        justify-content: flex-end;
+    
+        overflow-x: none;
+    }
+    
+    }

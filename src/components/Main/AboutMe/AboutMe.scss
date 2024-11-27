@@ -1,0 +1,94 @@
+
+.AboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0;
+
+
+
+}
+
+.AboutMe-Inner {
+    width: 90%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.AboutMe-Text {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+
+    gap: 20px;
+
+    width: 50%;
+}
+.AboutMe-Text p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff80;
+
+}
+
+.AboutMe-Foto-Container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 40%;
+    max-height: 400px;
+
+    align-self: flex-start;
+
+}
+.AboutMe-Foto-Container img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    min-width: 200px;
+    min-height: 200px;
+
+    border-radius: 50%;
+}
+
+@media (max-width: 1024px) {
+    .AboutMe-Inner{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .AboutMe-Foto-Container{
+        align-self: center;
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .AboutMe-Text{
+        align-self: flex-start;
+        width: 100%;
+
+    }
+
+    .AboutMe-Text p {
+        font-size: 14px;
+     }
+
+}
+@media (max-width: 600px) {
+    .AboutMe-Foto-Container img{
+        max-width: 250px;
+        max-height: 250px;
+    }
+}

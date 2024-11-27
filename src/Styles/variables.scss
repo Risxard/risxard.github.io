@@ -1,0 +1,90 @@
+$background-color: #090E16;
+$background-color2: #7b4be21a;
+$color-primary: #7B4AE2;
+$color-secundary : #7a4ae380;
+
+
+/*#090E16*/
+
+
+section{
+    padding-block: 10rem;
+}
+
+.Header-conteudo p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff80;
+}
+
+
+
+.Title-Component {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.Title-Component span {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+    padding: 6px 10px;
+    border-radius: 8px;
+
+    background-color: $background-color2;
+}
+
+.Title-Component span p {
+    font-family: 'Raleway', sans-serif;
+    font-size: clamp(14px, 5vw, 20px);
+    font-weight: 700;
+
+    color: $color-primary;
+}
+
+.Title-Component h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: clamp(24px, 5vw, 48px);
+    line-height: auto;
+    letter-spacing: 0%;
+}
+
+.Header-conteudo .Title-Component h1 {
+    font-size: clamp(48px, 5vw, 52px);
+}
+
+
+@media (min-width: 768px) {
+
+    .Title-Component {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .Title-Component span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        padding: 8px 13px;
+        border-radius: 16px;
+    }
+    .Title-Component span p {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        color: $color-primary;
+    }
+    .Title-Component h1 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        line-height: auto;
+        letter-spacing: 0%;
+    }
+}

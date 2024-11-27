@@ -1,0 +1,102 @@
+@import '../../../../Styles/variables.scss';
+
+
+.SkillsSlide-Container {
+    padding-top: 32px;
+    width: 100%;
+    height: auto;
+    gap: 20px; 
+    display: flex;
+    flex-direction: column;
+
+}
+.SkillsSlide-Container img{
+    width: 45px;
+    height: 45px;
+    transition: all 0.4s ease-in-out;
+}
+
+.SkillsSlide-Container img:hover{
+    opacity: 50%;
+}
+
+.SkillsSlide-Container h5 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    font-weight: 16px;
+    color: #ffffff80;
+    padding-left: 5%;
+}
+
+.Skill-Slide-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    
+
+}
+    .SkillsSlide-Container img{
+        width: 64px;
+        height: 64px;
+    }
+
+
+.Skills-Slide {
+    width: 100%;
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    padding: 5%;
+}
+
+.Skill-Slide-inner::-webkit-scrollbar {
+    display: none;
+}
+
+.Skills-Slide span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 18px;
+}
+
+.Skills-Slide span h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: $color-primary;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+
+    .SkillsSlide-Container img{
+        width: 64px;
+        height: 64px;
+    }
+
+    .SkillsSlide-Container {
+        align-items: center;
+        padding-top: 100px;
+        gap: 45px;
+    }
+    .Skill-Slide-inner{
+        align-items: center;
+    }
+    .SkillsSlide-Container h5 {
+        font-size: 24px;
+        padding-left: 0%;
+    }
+    .Skills-Slide{
+        
+        align-items: center;
+        justify-content: center;
+        padding: 0%;
+    }
+}

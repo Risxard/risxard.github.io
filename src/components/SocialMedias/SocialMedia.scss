@@ -1,0 +1,14 @@
+.SocialMedia-Container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.SocialMedia-Container svg path{
+    transition: all 0.3s ease-in-out;
+}
+.SocialMedia-Container svg:hover path{
+    fill-opacity: 1;
+}

@@ -1,0 +1,91 @@
+.Avatar-container{
+
+
+    width: auto;
+    height: auto;
+}
+.Avatar-container svg{
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.Avatar-container svg #IconeJS{
+    animation: circle1 15s linear infinite;
+    -webkit-animation: circle1 15s linear infinite;
+}
+.Avatar-container svg #IconeCSS{
+    animation: circle2 15s linear infinite;
+    -webkit-animation: circle2 10s linear infinite;
+}
+.Avatar-container svg #IconeReact{
+    animation: circle3 15s linear infinite;
+    -webkit-animation: circle3 15s linear infinite;
+}
+
+
+
+.Avatar-container svg #IconeJS,
+#IconeCSS, 
+#IconeReact
+{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+@-webkit-keyframes circle1{
+
+    0%{
+        transform: rotate(0deg)translateY(-230px)rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg)translateY(-230px)rotate(-360deg);
+    }
+
+}
+
+@-webkit-keyframes circle2{
+
+    0%{
+
+        transform: rotate(0deg)translateY(-230px)rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg)translateY(-230px)rotate(360deg);
+    }
+
+}
+
+@-webkit-keyframes circle3{
+
+    0%{
+        transform: rotate(0deg)translateY(-230px)rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg)translateY(-230px)rotate(360deg);
+    }
+
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+    .Header-conteudo{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    .Avatar-container{
+        order: -1;
+        align-self: center;
+    }
+}
+
